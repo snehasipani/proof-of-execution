@@ -1,0 +1,24 @@
+
+{
+  "name": "proof-of-execution",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent verification platform for human and AI agent execution",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "agent/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  }
+}
+
+
